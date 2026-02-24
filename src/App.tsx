@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <Header />
-{/*       <main>
+{/*       <main className="pt-24">
         <Inicio />
         <SobreMi />
         <Experiencia />
