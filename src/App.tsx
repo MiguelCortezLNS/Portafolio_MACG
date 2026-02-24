@@ -1,13 +1,21 @@
-import './App.css'
+import Header from "@components/header/Header.tsx";
+import "./App.css";
 
 function App() {
   return (
-    <div className="min-h-screen bg-zinc-900 flex items-center justify-center">
-      <h1 className="text-4xl font-bold text-white">
-        Portafolio MACG
-      </h1>
-    </div>
-  )
+    <>
+      <Header />
+{/*       <main className="pt-24">
+        <Inicio />
+        <SobreMi />
+        <Experiencia />
+        <Habilidades />
+        <Educacion />
+        <Contacto />
+      </main>
+      <Footer /> */}
+    </>
+  );
 }
 
-export default App
+export default App;
