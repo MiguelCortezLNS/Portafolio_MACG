@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Header() {
+function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
@@ -95,3 +95,5 @@ export default function Header() {
     </header>
   );
 }
+
+export default Header;
