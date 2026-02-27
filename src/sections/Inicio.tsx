@@ -1,10 +1,41 @@
 function Inicio(){
     return (
         <section id="inicio" className="min-h-screen flex items-center justify-center bg-gray-100">
-            <div className="text-center">
-                <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-4">¡Hola, soy Mike!</h1>
-                <p className="text-xl md:text-2xl text-gray-600 mb-8">Desarrollador Full Stack</p>
-                <a href="#sobre-mi" className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300">Conoce más sobre mí</a>
+            <div className="Presentacion">
+                <div className="MiNombre">
+                    Miguel Alejandro Cortez Gutiérrez
+                </div>
+                <div className="MiProfesión">
+                    Ingeniero en Computación
+                </div>
+                <div className="Ingeniero_Descripcion">
+                    Diseñador UX/UI | Desarrollador Frontend | Desarrollador Backend | React Programmer
+                </div>
+                <div className="Botones_Inicio">
+                    <button>
+                        Contactar
+                    </button>
+                    <button>
+                        Conocer más
+                    </button>
+                    <button>
+                        Descargar CV
+                    </button>
+                </div>
+            </div>
+            <div className="Card_Presentacion"> 
+                <div className="Foto_Perfil">
+
+                </div>
+                <div className="Numero_Telefonico">
+                    444-299-4145
+                </div>
+                <div className="Correo_Electronico">
+                    mickeycortez2002@gmail.com
+                </div>
+                <div className="Contacto_Linkedin">
+                    Miguel Alejandro Cortez Gutiérrez
+                </div>
             </div>
         </section>
     );
