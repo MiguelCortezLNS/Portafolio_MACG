@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="w-full text-indigo-800 pt-16 pb-8">
+    <footer className="w-full border-t border-gray-800 text-indigo-800 pt-16 pb-8">
       <div className="absolute top-0 left-0 w-full h-1 bg-linear-to-r from-indigo-600 via-purple-600 to-blue-600"></div>
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
@@ -44,7 +44,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-12 border-t border-gray-800 pt-6 text-center text-sm text-gray-500">
+        <div className="mt-12 pt-6 text-center text-sm text-gray-500">
           © {new Date().getFullYear()} Miguel Alejandro Cortez Gutiérrez. 
           Todos los derechos reservados.
         </div>

@@ -2,10 +2,9 @@ function SobreMi() {
   return (
     <section
       id="sobre-mi"
-      className="py-20 bg-linear-to-b from-gray-50 to-white"
+      className="py-20"
     >
       <div className="max-w-6xl mx-auto px-6">
-        {/* TÍTULO */}
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold bg-linear-to-r from-indigo-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
             Sobre Mí
@@ -13,7 +12,6 @@ function SobreMi() {
           <div className="mt-3 h-1 w-24 mx-auto bg-linear-to-r from-indigo-500 to-purple-500 rounded-full"></div>
         </div>
 
-        {/* CONTENIDO */}
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <p className="text-lg md:text-xl sm:text-lg text-gray-700 leading-relaxed">
             Soy <span className="font-semibold text-indigo-600">Ingeniero en Computación </span> 
@@ -38,7 +36,6 @@ function SobreMi() {
           </p>
         </div>
 
-        {/* CARDS DE ENFOQUE */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition duration-300">
             <h3 className="text-lg font-semibold text-indigo-600 mb-2">
