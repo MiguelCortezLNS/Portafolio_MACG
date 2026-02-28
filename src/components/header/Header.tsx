@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Header() {
+function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
@@ -8,7 +8,7 @@ export default function Header() {
     { label: "Sobre mí", href: "#sobre-mi" },
     { label: "Experiencia", href: "#experiencia" },
     { label: "Habilidades", href: "#habilidades" },
-    { label: "Educación", href: "#educacion" },
+    { label: "Educacion", href: "#educacion" },
     { label: "Contacto", href: "#contacto" },
   ];
 
@@ -95,3 +95,5 @@ export default function Header() {
     </header>
   );
 }
+
+export default Header;
