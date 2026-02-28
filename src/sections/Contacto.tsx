@@ -1,9 +1,6 @@
 export function Contacto() {
   return (
-    <section
-      id="contacto"
-      className="py-20"
-    >
+    <section id="contacto" className="py-20">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold bg-linear-to-r from-indigo-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
@@ -83,44 +80,74 @@ export function Contacto() {
               </p>
             </div>
           </div>
+          <form
+            action="https://formsubmit.co/b3753a4b85f72f6483642d017b4b48d6"
+            method="POST"
+            className="relative bg-white p-10 rounded-3xl shadow-2xl border border-gray-100 space-y-8 transition-all duration-300 hover:shadow-indigo-200"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="Nuevo mensaje desde tu portafolio"
+            />
+            <input type="hidden" name="_captcha" value="false" />
 
-          <form className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 space-y-6">
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+            <div className="absolute -top-1 left-0 w-full h-1 bg-linear-to-r from-indigo-600 via-purple-600 to-blue-600 rounded-t-3xl"></div>
+
+            {/* Nombre */}
+            <div className="flex flex-col space-y-2">
+              <label className="text-sm font-medium text-gray-700">
                 Nombre
               </label>
               <input
                 type="text"
+                name="name"
+                required
                 placeholder="Tu nombre"
-                className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition"
+                className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-gray-50 
+      focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 
+      focus:border-indigo-500 transition-all duration-200"
               />
             </div>
 
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+            {/* Email */}
+            <div className="flex flex-col space-y-2">
+              <label className="text-sm font-medium text-gray-700">
                 Correo electrónico
               </label>
               <input
                 type="email"
+                name="email"
+                required
                 placeholder="correo@ejemplo.com"
-                className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition"
+                className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-gray-50 
+      focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 
+      focus:border-indigo-500 transition-all duration-200"
               />
             </div>
 
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+            {/* Mensaje */}
+            <div className="flex flex-col space-y-2">
+              <label className="text-sm font-medium text-gray-700">
                 Mensaje
               </label>
               <textarea
-                rows={4}
-                placeholder="Escribe tu mensaje..."
-                className="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition resize-none"
+                name="message"
+                rows={5}
+                required
+                placeholder="Cuéntame sobre tu proyecto..."
+                className="w-full px-4 py-3 rounded-xl border border-gray-300 bg-gray-50 
+      focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 
+      focus:border-indigo-500 transition-all duration-200 resize-none"
               ></textarea>
             </div>
 
+            {/* Botón */}
             <button
               type="submit"
-              className="w-full py-3 rounded-xl bg-linear-to-r from-indigo-600 to-purple-600 text-white font-semibold shadow-md hover:opacity-90 transition duration-300"
+              className="w-full py-3 rounded-xl bg-linear-to-r from-indigo-600 via-purple-600 to-blue-600 
+    text-white font-semibold shadow-lg hover:shadow-xl 
+    hover:-translate-y-1 transition-all duration-300"
             >
               Enviar mensaje
             </button>
