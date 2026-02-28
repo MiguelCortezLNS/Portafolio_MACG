@@ -1,4 +1,5 @@
 import perfil from "@/assets/Foto_Mia.jpg";
+import { personalInfo } from "@/config/personalInfo";
 
 function Inicio() {
   return (
@@ -16,7 +17,7 @@ function Inicio() {
             <div className="space-y-4 mt-6">
               {/* TELÉFONO */}
               <a
-                href="tel:4442994145"
+                href={`tel:${personalInfo.telefono.replace(/-/g, '')}`}
                 className="group flex items-center gap-3 p-3 rounded-xl hover:bg-indigo-50 transition-all duration-300"
               >
                 <svg
@@ -29,13 +30,13 @@ function Inicio() {
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                 </svg>
                 <span className="text-gray-700 font-medium group-hover:text-indigo-700 transition-colors duration-300">
-                  444-299-4145
+                  {personalInfo.telefono}
                 </span>
               </a>
 
               {/* EMAIL */}
               <a
-                href="mailto:mickeycortez2002@gmail.com"
+                href={`mailto:${personalInfo.email}`}
                 className="group flex items-center gap-3 p-3 rounded-xl hover:bg-indigo-50 transition-all duration-300"
               >
                 <svg
@@ -49,13 +50,13 @@ function Inicio() {
                   <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
                 <span className="text-gray-700 font-medium break-all group-hover:text-indigo-700 transition-colors duration-300">
-                  mickeycortez2002@gmail.com
+                  {personalInfo.email}
                 </span>
               </a>
 
               {/* LINKEDIN */}
               <a
-                href="https://www.linkedin.com/in/miguel-alejandro-cortez-gutierrez-14b30226b/"
+                href={personalInfo.linkedinUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center gap-3 p-3 rounded-xl hover:bg-indigo-50 transition-all duration-300"
@@ -72,7 +73,7 @@ function Inicio() {
                   <circle cx="4" cy="4" r="2"></circle>
                 </svg>
                 <span className="text-indigo-600 font-semibold group-hover:text-purple-600 transition-colors duration-300">
-                  Miguel Alejandro Cortez Gutiérrez
+                  {personalInfo.linkedinNombre}
                 </span>
               </a>
             </div>
@@ -81,15 +82,15 @@ function Inicio() {
 
         <div className="order-2 md:order-1 text-center md:text-left">
           <p className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-linear-to-r from-indigo-600 via-purple-600 to-blue-600 bg-clip-text text-transparent leading-tight">
-            Miguel Alejandro Cortez Gutiérrez
+            {personalInfo.nombreCompleto}
           </p>
 
           <h2 className="mt-4 text-xl sm:text-2xl text-gray-700 font-semibold">
-            Ingeniero en Computación
+            {personalInfo.titulo}
           </h2>
 
           <p className="mt-6 text-gray-600 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
-            Desarrollador Frontend | Desarrollador Backend | Diseñador UX/UI | React Programmer
+            {personalInfo.descripcion}
           </p>
 
           {/* BOTONES */}
@@ -107,7 +108,7 @@ function Inicio() {
               Conocer más
             </a>
             <a
-              href="/CV Miguel Cortez 2025.pdf"
+              href={personalInfo.cvPath}
               download
               className="px-6 py-3 rounded-xl bg-gray-900 text-white font-semibold hover:bg-gray-800 transition duration-300"
             >

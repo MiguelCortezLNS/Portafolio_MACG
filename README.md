@@ -1,3 +1,54 @@
+# Portafolio Personal - React + TypeScript + Vite
+
+Este es un portafolio web moderno construido con React, TypeScript y Vite.
+
+## 🚀 Configuración Inicial
+
+### 1. Clonar el repositorio
+```bash
+git clone <tu-repositorio>
+cd portafolio
+```
+
+### 2. Instalar dependencias
+```bash
+npm install
+```
+
+### 3. **IMPORTANTE: Configurar información personal**
+
+Este proyecto protege tu información personal. Necesitas crear tu propio archivo de configuración:
+
+```bash
+# En Windows PowerShell
+Copy-Item src\config\personalInfo.example.ts src\config\personalInfo.ts
+
+# En Linux/Mac
+cp src/config/personalInfo.example.ts src/config/personalInfo.ts
+```
+
+Luego edita `src/config/personalInfo.ts` con tu información:
+- Nombre completo y corto
+- Teléfono y email
+- Perfil de LinkedIn
+- Ruta de tu CV y foto
+
+**⚠️ El archivo `personalInfo.ts` NO se sube a GitHub por seguridad.**
+
+### 4. Iniciar servidor de desarrollo
+```bash
+npm run dev
+```
+
+## 🔒 Seguridad de Datos Personales
+
+- ✅ `src/config/personalInfo.ts` - **Protegido** (incluido en `.gitignore`)
+- ✅ `src/config/personalInfo.example.ts` - **Público** (plantilla de ejemplo)
+
+Lee más en [src/config/README.md](src/config/README.md)
+
+---
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

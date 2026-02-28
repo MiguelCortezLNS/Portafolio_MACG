@@ -22,3 +22,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Información personal privada
+src/config/personalInfo.ts
+Info_Personal.txt
+
+# Archivos personales
+src/assets/CV Miguel Cortez 2025.pdf
+src/assets/Foto_Mia.jpg
+public/CV Miguel Cortez 2025.pdf
