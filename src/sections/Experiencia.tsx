@@ -1,81 +1,77 @@
 function Experiencia() {
   return (
-    <section id="experiencia" className="py-20 ">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold bg-linear-to-r from-indigo-600 via-purple-600 to-blue-600 bg-clip-text text-transparent">
-            Experiencia
-          </h2>
-          <div className="mt-3 h-1 w-24 mx-auto bg-linear-to-r from-indigo-500 to-purple-500 rounded-full"></div>
-        </div>
+    <section
+      id="experiencia"
+      className="py-20 bg-linear-to-b from-gray-50 to-white"
+    >
+      <div className="max-w-5xl mx-auto px-6">
 
-        <div className="relative border-l-2 border-indigo-200 ml-4 md:ml-0 md:border-l-0 md:grid md:grid-cols-2 md:gap-10">
-          <div className="relative md:pl-0 pl-6">
-            <div className="absolute -left-3 top-2 w-4 h-4 bg-indigo-400 rounded-full md:hidden"></div>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-14 text-center relative">
+          Experiencia
+          <span className="block w-24 h-1 bg-indigo-600 mx-auto mt-4 rounded-full"></span>
+        </h2>
 
-            <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition duration-300">
-              <h3 className="text-xl font-semibold text-indigo-500">
-                Recepcionista – Xtreme Gym
-              </h3>
-              <p className="text-sm text-gray-500 mt-1">
-                Mayo 2025 – Diciembre 2025
-              </p>
-              <ul className="mt-4 space-y-2 text-sm text-gray-600 leading-relaxed list-disc list-inside">
-                <li>Atención al cliente y gestión de membresías.</li>
-                <li>Soporte informativo sobre servicios y promociones.</li>
-              </ul>
+        <div className="relative border-l-4 border-indigo-600 ml-4">
+
+          {[
+            {
+              title: "Recepcionista – Xtreme Gym",
+              date: "Mayo 2025 – Diciembre 2025",
+              points: [
+                "Atención al cliente y gestión de membresías.",
+                "Soporte informativo sobre servicios y promociones."
+              ]
+            },
+            {
+              title: "Desarrollador de Aplicación Móvil – UASLP",
+              date: "UniVentas · Octubre 2024 – Abril 2025",
+              points: [
+                "Diseño UI/UX en Figma y desarrollo en React Native.",
+                "Implementación de frontend y backend.",
+                "Plataforma para impulsar ventas entre estudiantes."
+              ]
+            },
+            {
+              title: "Staff de Soporte Técnico – Congreso de Enfermería",
+              date: "Marzo 2024",
+              points: [
+                "Soporte técnico en tiempo real durante conferencias.",
+                "Resolución rápida de incidencias bajo presión."
+              ]
+            },
+            {
+              title: "Asistente de Biblioteca – CICTD",
+              date: "Servicio Social · Agosto 2019 – Febrero 2020",
+              points: [
+                "Apoyo a estudiantes y gestión del sistema de préstamo.",
+                "Mantenimiento y soporte básico a equipos."
+              ]
+            }
+          ].map((job, index) => (
+            <div key={index} className="mb-14 ml-8 group">
+
+              <span className="absolute -left-3 flex items-center justify-center w-6 h-6 bg-indigo-600 rounded-full ring-4 ring-white"></span>
+
+              <div className="bg-white p-8 rounded-2xl shadow-md transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 border border-transparent hover:border-indigo-500">
+
+                <h3 className="text-xl md:text-2xl font-semibold text-indigo-600 mb-2">
+                  {job.title}
+                </h3>
+
+                <p className="text-gray-500 text-sm mb-4">
+                  {job.date}
+                </p>
+
+                <ul className="space-y-2 text-gray-600 text-sm leading-relaxed list-disc list-inside">
+                  {job.points.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
+
+              </div>
             </div>
-          </div>
+          ))}
 
-          <div className="mb-12 md:mb-0 relative md:pl-0 pl-6">
-            <div className="absolute -left-3 top-2 w-4 h-4 bg-blue-600 rounded-full md:hidden"></div>
-
-            <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition duration-300">
-              <h3 className="text-xl font-semibold text-blue-600">
-                Desarrollador de Aplicación Móvil – UASLP
-              </h3>
-              <p className="text-sm text-gray-500 mt-1">
-                UniVentas · Octubre 2024 – Abril 2025
-              </p>
-              <ul className="mt-4 space-y-2 text-sm text-gray-600 leading-relaxed list-disc list-inside">
-                <li>Diseño UI/UX en Figma y desarrollo en React Native.</li>
-                <li>Implementación de frontend y backend de la aplicación.</li>
-                <li>Plataforma para impulsar ventas entre estudiantes.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="mb-12 md:mb-0 relative md:pl-0 pl-6">
-            <div className="absolute -left-3 top-2 w-4 h-4 bg-purple-600 rounded-full md:hidden"></div>
-
-            <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition duration-300">
-              <h3 className="text-xl font-semibold text-purple-600">
-                Staff de Soporte Técnico – Congreso de Enfermería
-              </h3>
-              <p className="text-sm text-gray-500 mt-1">Marzo 2024</p>
-              <ul className="mt-4 space-y-2 text-sm text-gray-600 leading-relaxed list-disc list-inside">
-                <li>Soporte técnico en tiempo real durante conferencias.</li>
-                <li>Resolución rápida de incidencias bajo presión.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="mb-12 md:mb-0 relative md:pl-0 pl-6">
-            <div className="absolute -left-3 top-2 w-4 h-4 bg-indigo-600 rounded-full md:hidden"></div>
-
-            <div className="bg-white p-6 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition duration-300">
-              <h3 className="text-xl font-semibold text-indigo-600">
-                Asistente de Biblioteca – CICTD
-              </h3>
-              <p className="text-sm text-gray-500 mt-1">
-                Servicio Social · Agosto 2019 – Febrero 2020
-              </p>
-              <ul className="mt-4 space-y-2 text-sm text-gray-600 leading-relaxed list-disc list-inside">
-                <li>Apoyo a estudiantes y gestión del sistema de préstamo.</li>
-                <li>Mantenimiento y soporte básico a equipos de cómputo.</li>
-              </ul>
-            </div>
-          </div>
         </div>
       </div>
     </section>
