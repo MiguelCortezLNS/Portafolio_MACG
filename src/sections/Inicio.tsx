@@ -3,7 +3,7 @@ import { personalInfo } from "@/config/personalInfo";
 
 function Inicio() {
   return (
-    <section id="inicio" className="mb-3">
+    <section id="inicio" className="mb-3 pt-10">
       <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div className="order-1 md:order-2 ">
           <div className="bg-white shadow-xl rounded-2xl p-8 w-full max-w-sm border border-gray-100 backdrop-blur-md mx-auto md:ml-auto md:mr-0">
